@@ -1,0 +1,28 @@
+<html>
+<head>
+	<title>SetInterval Method</title>
+	<script>
+	
+		function continuousDisplay(){
+			
+				setInterval(displayDate,1000);
+			
+		}
+			
+
+		function displayDate(){
+			
+			var d = new Date();
+
+			var x = d.toLocaleString();
+			
+			document.getElementById("getTimeInfo").innerHTML = x;
+			
+		}
+		
+	</script>
+</head>
+<body onload="continuousDisplay()">
+<p>The current time and date is : </p><p id="getTimeInfo"></p>
+</body>
+</html>
